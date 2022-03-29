@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background-color: #9C835F !important;
+    height: 100vh;
+}
+
+.hero {
+    height: 100vh;
+}
+
+#main-title {
+    color: #F9B23D;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#main-arrow {
+    color: #724C21;
+    font-weight: bold;
+    font-size: 3em;
+    padding-left: 2vw;
+    padding-right: 1vw;
+}
+
+#main-title, p, h1, #main-arrow {
+    font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rps-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; */
+}
+
+.img {
+    /* height: 100vh !important; */
+    width: 15vh !important;
+    max-width: 150%;
+    border: 1em transparent solid !important;
+    /* border: 2em solid transparent  !important; */
+}
+
+.img[data-option=paper], .img[data-option=paper1] {
+    /* height: 100vh !important; */
+    width: 13vh !important;
+    max-width: 150%;
+    border: 1em transparent solid !important;
+    /* border: 2em solid transparent  !important; */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+#player {
+    grid-column: 1;
+    align-content: flex-end;
+    padding-inline-start: 20vh;
+}
+
+.rps-menu {
+    grid-column: 2;
+}
+
+#COM {
+    grid-column: 3;
+    padding-inline-end: 20vh;
+}
+
+.rps-menu {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: [row1-start] 90% [row1-end] auto [last-line];;
+    height: 80vh;
+}
+
+.player-selection:hover {
+    transform:scale(1.2)
+}
+
+.results {
+    padding-top: 15em;
+}
+
+.init {
+    color: #BD0000;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.you-win, .pc-win, .draw {
+    display: none;
+    font-size: 2.5vw;
+    text-align: center;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    border-radius:5.5%;
+    color: white;
+    border: solid #4C9654 2px;
+    background-color: #4C9654;
+    transform: rotate(-28.87deg);
+}
+
+.draw {
+    border: solid #035B0C 2px;
+    background-color: #035B0C;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.navbar {
+    padding-bottom: 0px !important;
+}
+
+.player-choice, .pc-choice {
+    background-color: #C4C4C4;
+    border-radius: 15%;
+    border: #C4C4C4 100px;
+}
